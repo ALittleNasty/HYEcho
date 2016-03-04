@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="304" id="KGk-i7-Jjw" customClass="PMMusicLyricCell">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="304"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="303"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTV-tB-JPo">
+                        <rect key="frame" x="0.0" y="293" width="346" height="10"/>
+                        <color key="backgroundColor" red="0.89464962120000002" green="0.89464962120000002" blue="0.89464962120000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="pI1-bC-yRG"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="由young上传" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrR-Kq-RB6">
+                        <rect key="frame" x="265" y="10" width="71" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="WJM-Gl-wAs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跟着节拍抖抖抖~~~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqA-hB-CTi">
+                        <rect key="frame" x="10" y="30" width="326" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="LcR-We-kj3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is lyric" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fap-0j-IWo">
+                        <rect key="frame" x="10" y="60" width="326" height="223"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="MTV-tB-JPo" secondAttribute="trailing" id="9UK-dG-XtP"/>
+                    <constraint firstItem="vqA-hB-CTi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Afv-jD-rWA"/>
+                    <constraint firstItem="Fap-0j-IWo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ki8-gm-zRK"/>
+                    <constraint firstItem="MTV-tB-JPo" firstAttribute="top" secondItem="Fap-0j-IWo" secondAttribute="bottom" constant="10" id="MZU-IY-Dwz"/>
+                    <constraint firstItem="MTV-tB-JPo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="O6z-vG-7aw"/>
+                    <constraint firstItem="ZrR-Kq-RB6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="cVT-hb-KxO"/>
+                    <constraint firstItem="vqA-hB-CTi" firstAttribute="top" secondItem="ZrR-Kq-RB6" secondAttribute="bottom" constant="5" id="dVO-Ko-uh9"/>
+                    <constraint firstAttribute="bottom" secondItem="MTV-tB-JPo" secondAttribute="bottom" id="e4C-Ht-dQ0"/>
+                    <constraint firstAttribute="trailing" secondItem="vqA-hB-CTi" secondAttribute="trailing" constant="10" id="g9H-TZ-Hr6"/>
+                    <constraint firstAttribute="trailing" secondItem="Fap-0j-IWo" secondAttribute="trailing" constant="10" id="pyX-g6-l83"/>
+                    <constraint firstAttribute="trailing" secondItem="ZrR-Kq-RB6" secondAttribute="trailing" constant="10" id="qfF-zG-RvH"/>
+                    <constraint firstItem="Fap-0j-IWo" firstAttribute="top" secondItem="vqA-hB-CTi" secondAttribute="bottom" constant="10" id="sl9-1G-2jo"/>
+                    <constraint firstItem="ZrR-Kq-RB6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="tM6-1S-OsN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="authorLabel" destination="ZrR-Kq-RB6" id="sle-6x-GBW"/>
+                <outlet property="lyricLabel" destination="Fap-0j-IWo" id="hjQ-ju-YiB"/>
+                <outlet property="titleLabel" destination="vqA-hB-CTi" id="Nfs-mR-lqd"/>
+            </connections>
+            <point key="canvasLocation" x="551" y="591"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,78 @@
+//
+//  echo.pch
+//  HYEcho
+//
+//  Created by AiDong on 15/11/6.
+//  Copyright © 2015年 AiDong. All rights reserved.
+//
+
+#ifndef echo_pch
+#define echo_pch
+
+
+/**
+ *  注册独立开发者的appKey 和 secret
+ */
+#define WeiBoAppKey         @"3141129942"
+#define WeiBoAppSecret      @"07a4bd9a18185a9e0f732fc0024c8152"
+
+#define UMengAppKey         @"5643f72267e58e3ccc003b17"
+
+/**
+ *  常用链接
+ */
+#define HomePage_URL @"http://echosystem.kibey.com/sound/hot?page="
+#define Sound_URL    @"http://echosystem.kibey.com/sound/info?sound_id="
+#define Channel_URL  @"http://echosystem.kibey.com/channel/get?page="
+
+#define HOT          @"&with_sound=0&order=hot"
+#define NEW          @"&with_sound=0&order=new"
+
+#define Comments_URL @"http://echosystem.kibey.com/bullet/get?type=1&rand=1&page=1&limit=5&sound_id="
+#define Banner_URL   @"http://echosystem.kibey.com/index/banner"
+
+
+#define kFullWidth  [UIScreen mainScreen].bounds.size.width
+#define kFullHeight [UIScreen mainScreen].bounds.size.height
+
+
+/**
+ *  第三方库头文件
+ */
+#import "Masonry.h"
+#import "MJRefresh.h"
+#import "MJExtension.h"
+#import "UIView+MB.h"
+//#import "FileService.h"//清除缓冲
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "UIImageView+WebCache.h"
+
+
+/**
+ *  category
+ */
+#import "UITableViewCell+Nib.h"
+#import "UICollectionViewCell+Nib.h"
+
+/**
+ *  全局的工具类
+ */
+#import "PlayHelper.h"
+#import "DataManager.h"
+#import "EchoPlayMusicController.h"
+
+
+// 颜色
+#define EchoColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define EchoColorRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+// 随机色
+#define EchoRandomColor EchoColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+
+// 常用颜色
+#define EchoTintColor EchoColor(251, 20, 83)
+#define EchoBlueColor [UIColor colorWithRed:27/255.0 green: 142/255.0 blue:222/255.0 alpha:1]
+
+
+#endif /* echo_pch */
